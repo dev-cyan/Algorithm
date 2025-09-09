@@ -1,7 +1,6 @@
 {
-    "files.associations": {
-        "iostream": "cpp",
-        "queue": "cpp",
-        "utility": "cpp"
-    }
+  "code-runner.executorMap": {
+    "cpp": "/opt/homebrew/bin/g++-15 -std=c++17 -O2 $fullFileName -o $dir/$fileNameWithoutExt && $dir/$fileNameWithoutExt"
+  },
+  "code-runner.runInTerminal": true
 }
