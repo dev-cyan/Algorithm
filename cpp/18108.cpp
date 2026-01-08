@@ -5,10 +5,13 @@ int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    int N;
-    cin >> N;
+    int N, M;
+    cin >> N >> M;
 
-    cout << N - (2541 - 1998);
+    cout << N * (M%10) << "\n";
+    cout << (N * ((M%100)-(M%10)))/10 << "\n";
+    cout << (N * (M - (M%100)))/100 << "\n";
+    cout << (N * (M - (M%100))) + (N * ((M%100)-(M%10))) + N * (M%10);
 
     return 0;
 }
